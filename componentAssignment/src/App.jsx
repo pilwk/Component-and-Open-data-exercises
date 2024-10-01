@@ -14,11 +14,15 @@ function App() {
         product4: { name: 'Intel Core i5-10600K', price: 280 },
         product5: { name: 'Intel Core i7-9700K', price: 380 },
       };
+    const title = "Welcome to product page!"
+    const path = "./src/assets/logo.png"
 
     return (
         <>
         {/* Header component */}
-            <Header />
+            <Header 
+            title={title}
+            path={path}/>
         {/* Product form component */}
             <Form 
                 product={product}

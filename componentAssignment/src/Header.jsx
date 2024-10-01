@@ -1,12 +1,12 @@
 import './Header.css'
 
-export function Header() {
+export function Header({title, path}) {
     return (
         <header className='header'>
             <div className="logo">
-                <img src={"./src/assets/logo.png"} alt={"logo"} />
+                <img src={path} alt={"logo"} />
             </div>
-            <h1>Welcome to product page!</h1>
+            <h1>{title}</h1>
         </header>
     );
 }
