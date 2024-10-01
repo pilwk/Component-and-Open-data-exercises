@@ -22,6 +22,7 @@ export function Form({ product, setProduct, quantity, setQuantity, productData})
             <div className="form-group">
                 <label htmlFor="product">Product:</label>
                 <select id="product" value={product} onChange={handleProductChange}>
+                    <option value="" disabled selected>Select your option</option>
                     {/* handling products in productObject for selection */}
                     {Object.entries(productData).map(([productId, productData]) => (
                         <option value={productId}>
