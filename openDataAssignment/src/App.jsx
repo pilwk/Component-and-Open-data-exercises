@@ -1,11 +1,13 @@
+import React from 'react'
+import DeployToday from './DeployToday.jsx'
 
 function App() {
 
-  return (
-    <>
-    <h1>placeholder</h1>
-    </>
-  )
+    return (
+        <>
+            <DeployToday/>
+        </>
+    )
 }
 
 export default App
