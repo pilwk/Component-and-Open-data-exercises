@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Footer } from './Footer';
 import { RefreshButton } from './RefreshButton';
 
 function DeployToday() {
@@ -40,19 +39,18 @@ function DeployToday() {
     }
 
     return (
-        <>
+        <div className='container'>
             {data ? (
                 <>
-                    <p>Should I Deploy Today?</p>
-                    <h1>{data.message}</h1>
+                    <p className='question'>Should I Deploy Today?</p>
+                    <h1 className='message'>{data.message.toUpperCase()}</h1>
                     <RefreshButton onRefresh={handleRefresh} />
                 </>
             ) : (
                 <p>Loading...</p>
             )
             }
-            <Footer />
-        </>
+        </div>
     );
 }
 

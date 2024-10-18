@@ -11,5 +11,9 @@ export function RefreshButton(props) {
         e.target.blur()
     }
 
-    return <button onClick={handleClick} onKeyDown={handleKeys}>Refresh</button>;
+    return (
+        <>
+            <button className='refresh' onClick={handleClick} onKeyDown={handleKeys}>Tap space or click this to refresh</button>
+        </>
+    )
 }

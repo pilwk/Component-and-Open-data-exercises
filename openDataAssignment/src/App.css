@@ -1,0 +1,23 @@
+/* App.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
