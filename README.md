@@ -7,4 +7,4 @@ the combined directory has both assignments routed with a navbar
 
 ## Publishing
 
-tba
+[Published component exercise](https://pilwk.github.io/Component-and-Open-data-exercises/)
