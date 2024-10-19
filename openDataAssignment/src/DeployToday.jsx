@@ -10,7 +10,7 @@ function DeployToday() {
         try {
             const response = await axios.get(APIurl);
             setData(response.data);
-
+            
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -38,6 +38,18 @@ function DeployToday() {
         fetchData()
     }
 
+    function changeBackground(shouldideploy) {
+        const body = document.getElementById('body')
+        console.log(shouldideploy)
+        if (shouldideploy) {
+            body.classList.remove('false-background');
+            body.classList.add('true-background');
+        } else {
+            body.classList.remove('true-background');
+            body.classList.add('false-background');
+        }
+    }
+
     return (
         <div className='container'>
             {data ? (
@@ -45,6 +57,7 @@ function DeployToday() {
                     <p className='question'>Should I Deploy Today?</p>
                     <h1 className='message'>{data.message.toUpperCase()}</h1>
                     <RefreshButton onRefresh={handleRefresh} />
+                    {changeBackground(data.shouldideploy)}
                 </>
             ) : (
                 <p>Loading...</p>

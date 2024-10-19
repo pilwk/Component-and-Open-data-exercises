@@ -13,7 +13,7 @@ export function RefreshButton(props) {
 
     return (
         <>
-            <button className='refresh' onClick={handleClick} onKeyDown={handleKeys}>Tap space or click this to refresh</button>
+            <button className='refresh-button' onClick={handleClick} onKeyDown={handleKeys}>Tap space or click this to refresh</button>
         </>
     )
 }
