@@ -1,0 +1,14 @@
+.product-form{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group{
+    margin-left:10px;
+    display:flex;
+    align-items:center;
+}
+
+#quantity {
+    margin: 5px
+}

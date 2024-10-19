@@ -1,0 +1,21 @@
+#main {
+    display:flex;
+    flex-direction:column;
+}
+
+.navbar {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    background-color:rgb(45, 45, 45);
+    text-decoration: none;
+    justify-content: space-around;
+    margin-bottom:10px;
+}
+
+.navbar a h1{
+    text-decoration:none;
+    color:white;
+    margin-top:12px;
+    margin-bottom:12px;
+}

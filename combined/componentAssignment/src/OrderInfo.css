@@ -1,0 +1,10 @@
+table {
+    margin-left: 10px;
+    border-collapse:collapse;
+}
+
+.order-table *{
+    border: 1px solid;
+    text-align:center;
+    padding: 5px;
+}

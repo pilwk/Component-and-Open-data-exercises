@@ -1,0 +1,55 @@
+/* App.css */
+.container {
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 97vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*header title*/
+.question {
+    font-size:20px;
+}
+
+/*main text from api*/
+.message {
+    height:15vh;
+    max-height:15vh;
+    margin-top: 72px;
+    margin-bottom: 110px;
+    font-size:410%;
+    text-align:center;
+    text-overflow:ellipsis;
+}
+
+.refresh-button {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 10%;
+    color:white;
+    padding:12px;
+    font-size:2vh;
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.false-background {
+    background-color: red;
+}
+
+.true-background {
+    background-color: green;
+}
